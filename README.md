@@ -1,7 +1,7 @@
 
-# AfloatDB
+# NanoKV
 
-This project demonstrates how to build very simple distributed key-value store  on top of [MicroRaft](https://github.com/MicroRaft/MicroRaft). Please note that this is not production-ready
+This project demonstrates how to build very simple distributed key-value store  on top of [NanoRaft](https://github.com/nishihpandey/NanoRaft). Please note that this is not production-ready
 code.
 
 ## Code pointers
