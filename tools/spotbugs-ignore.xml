@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FindBugsFilter>
     <Match>
-        <Package name="~io\.afloatdb\.kv\.proto.*"/>
+        <Package name="~io\.nanokv\.kv\.proto.*"/>
     </Match>
     <Match>
-        <Package name="~io\.afloatdb\.cluster\.proto.*"/>
+        <Package name="~io\.nanokv\.cluster\.proto.*"/>
     </Match>
     <Match>
-        <Package name="~io\.afloatdb\.raft\.proto.*"/>
+        <Package name="~io\.nanokv\.raft\.proto.*"/>
     </Match>
     <Match>
-        <Package name="~io\.afloatdb\.management\.proto.*"/>
+        <Package name="~io\.nanokv\.management\.proto.*"/>
     </Match>
 </FindBugsFilter>

@@ -4,27 +4,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.microraft.afloatdb</groupId>
-    <artifactId>afloatdb-root</artifactId>
+    <groupId>io.microraft.nanokv</groupId>
+    <artifactId>nanokv-root</artifactId>
     <packaging>pom</packaging>
     <version>0.5-SNAPSHOT</version>
 
-    <name>AfloatDB Root</name>
+    <name>NanoKV Root</name>
     <url>https://microraft.io</url>
 
     <modules>
-        <module>afloatdb-commons</module>
-        <module>afloatdb-client</module>
-        <module>afloatdb-server</module>
-        <module>afloatdb-benchmark</module>
-        <module>afloatdb-client-cli</module>
+        <module>nanokv-commons</module>
+        <module>nanokv-client</module>
+        <module>nanokv-server</module>
+        <module>nanokv-benchmark</module>
+        <module>nanokv-client-cli</module>
     </modules>
 
     <properties>
         <root.dir>${project.basedir}</root.dir>
         <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
         <timestamp>${maven.build.timestamp}</timestamp>
-        <jdk.version>11</jdk.version>
+        <jdk.version>25</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <slf4j.api.version>1.7.36</slf4j.api.version>
@@ -214,7 +214,7 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <excludeFilterFile>${root.dir}/afloatdb/tools/spotbugs-ignore.xml</excludeFilterFile>
+                            <excludeFilterFile>${root.dir}/nanokv/tools/spotbugs-ignore.xml</excludeFilterFile>
                         </configuration>
                     </plugin>
                 </plugins>

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package io.microraft.nanokv.cluster.proto;
+
+option java_multiple_files = true;
+
+message NanoKVClusterEndpointsRequest {
+    string clientId = 1;
+}
+
+message NanoKVClusterEndpoints {
+    string clusterId = 1;
+    int64 endpointsCommitIndex = 2;
+    map<string, string> endpoint = 3;
+    string leaderId = 4;
+    int32 term = 5;
+}
+
+message NanoKVClusterEndpointsResponse {
+    NanoKVClusterEndpoints endpoints = 1;
+}
+
+service NanoKVClusterService {
+    rpc listenClusterEndpoints (NanoKVClusterEndpointsRequest) returns (stream NanoKVClusterEndpointsResponse);
+}
